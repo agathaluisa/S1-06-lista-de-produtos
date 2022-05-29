@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    
+    <header>
+        <div class="head">
+            <h1>Shop now</h1>
+        </div>
+        <div id="filters" class="filtersContainer">
+            
+            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarTodos">Todos Produtos</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifruti</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios">Laticínios</button>
+
+            <div class="containerBuscaPorNome">
+                
+                <input type="text" placeholder="Nome do produto" class="campoBuscaPorNome">
+                <button class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><img class="lupa" src="https://icon-library.com/images/search-icon-white/search-icon-white-16.jpg"></button>
+
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="containerPrecoTotal">
+            <div class="precoTotalTextDiv">
+                <div class="imagemContainer">
+                    <img class="iconContainer" src="./src/img/warning.png">
+                </div>
+                <div>
+                    <p>Valor total dos produtos da sessão selecionada</p>
+                </div>
+            </div>
+            <div class="precoTotalLabel">
+                <p>R$<span id="precoTotal">00.00</span></p>
+            </div>
+        </div>
+        <div class="containerListaProdutos" id="listProdutos">
+            <ul class="listProdutos">
+                
+            </ul>
+        </div>
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
